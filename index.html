@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book archive</title>
+
+    <style>
+        img {
+            height: 300px;
+        }
+        
+        .list-item {
+            height: 80px;
+        }
+    </style>
+
+    <!-- bootstrp css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(228, 228, 243);">
+    <header>
+        <h2 class="text-center my-4">Book <span class="text-success">Archives</span></h2>
+    </header>
+    <div class="input-group mb-3 mx-auto" style="width: 28rem;">
+        <input type="text" class="form-control" placeholder="Enter your Book name which you want" aria-label="Recipient's username" aria-describedby="button-addon2" id="searchInputId">
+        <button class="btn btn-outline-dark bg-danger" type="button" id="button-addon2" onclick="search()">search</button>
+    </div>
+    <main>
+        <p class="mb-5 ps-5 mx-lg-auto mx-md-auto text-primary" style="width: 28rem;" id="totalSearch"></p>
+        <div class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-4 g-4 rounded" id="details">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/bookArchive.js"></script>
+</body>
+
+</html>
